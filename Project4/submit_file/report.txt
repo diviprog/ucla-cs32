@@ -1,0 +1,17 @@
+Big-O of load() -> If there are N relevant Geopoints in mapdata.txt with an average of P connected GeoPoints, load() is O(N*P) -- inserting into HashMap is O(1), and inserting needs to happen for each of the P in each of the N GeoPoints
+
+Big-O of get_connected_points() -> O(1) -- retrieval is constant time complexity in a HashMap, regardless of the object being retrieved
+
+Big-O of get_street_name() -> O(1) -- retrieval is constant time complexity in a HashMap, regardless of the object being retrieved
+
+Explanation of the data structures in route() -
+
+The Router::route function within the router.cpp file employs the A* algorithm for determining the shortest path between two points.
+
+A priority_queue is utilized to hold nodes awaiting exploration, sorted by their f_score, which comprises the sum of the g_score (representing the cost from the start node to the current node) and the heuristic cost (an estimation of the cost from the current node to the goal). This ensures that nodes with the lowest f_score are prioritized for exploration. The custom comparator NodeComparator dictates the sorting order within this priority queue.
+
+An unordered_map serves as a hashmap to store all generated nodes during the search process. The key is the string representation of a GeoPoint, while the value is a pointer to the corresponding Node object. This structure enables swift access to any node for checking whether it has been encountered before and for updating its scores if a superior path is discovered.
+
+The Node structure embodies a point in the path, containing essential attributes such as the GeoPoint, g_score, f_score, and a pointer to the parent Node. This structure plays a pivotal role in reconstructing the path upon reaching the goal and calculating the f_score used in the priority queue.
+
+The utilization of these data structures streamlines the implementation of the A* algorithm by facilitating efficient storage and retrieval of path information, as well as sorting nodes based on their potential to yield an optimal path. The priority_queue, with its capability to select the node with the lowest f_score, ensures the algorithm explores promising paths promptly. The unordered_map provides rapid node access for score updates and visitation checks, markedly reducing the time complexity compared to a linear search approach.

@@ -1,0 +1,9 @@
+Your score on Project 4 was 100 out of 100.
+This breaks down as:
+        HashMap:              25/25
+        GeoDatabase:          25/25
+        Router:               20/20
+        Optimality of route:  5/5
+        TourGenerator:        20/20
+        Report:               5/5
+The median total score on this assignment was 86 out of 100.

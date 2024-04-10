@@ -15,3 +15,7 @@ My projects and homeworks done in CS32 at UCLA in W24
 | Homework 3 | 86/100 |
 | Homework 4 | 100/100 |
 | Homework 5 | - |
+
+| Midterm 1 | 30/35 |
+| Midterm 2 | 54/65 |
+| Final | 89/100 |

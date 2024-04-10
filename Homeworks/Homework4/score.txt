@@ -1,0 +1,17 @@
+Your total score for Homework 4 is 100/100.
+This breaks down as:
+        Problem 1a:                     5/5
+        Problem 1b:                     5/5
+        Problem 1c:                     5/5
+        Problem 1d:                     5/5
+        Problem 1e:                     2/2
+        Problem  2:                     10/10
+        Problem  3:                     8/8
+        Problem 4a:                     10/10
+        Problem 4b:                     8/8
+        Problem 5a:                     8/8
+        Problem 5b:                     8/8
+        Problem 6a:                     8/8
+        Problem 6b:                     8/8
+        Problem 7 (insertion_sort):     5/5
+        Problem 7 (sortUsingPtrs):      5/5

@@ -1,0 +1,33 @@
+2.
+
+The first 12 (r,c) coordinates popped by the stack algorithm are 
+6,5
+6,6
+6,4
+7,4
+8,4
+8,3
+8,1
+7,1
+6,3
+5,5
+4,5
+4,4
+
+
+4.
+The first 12 (r,c) coordinates popped by the queue algorithm are 
+6, 5
+5, 5
+6, 4
+6, 6
+4, 5
+6, 3
+7, 4
+3, 5
+4, 4
+8, 4
+2, 5
+4, 3
+
+The difference between the maze and queue approach represents two different maze-solving algorithms. The stack algorithm represents the Trémaux's algorithm - traverse through a maze and log the places you've encountered previously, once you hit a dead end or a position where you cannot go to a position that you have not visited before, you backpedal and reach the position where you made your last choice between two directions and choose the one that you hadn't chosen before and repeat this process. This algorithm goes through the maze, marks the forks in the maze and chooses one particular path until it cannot go any further and goes back and looks at the other available ways it could've gone before until it reaches the destination. The queue algorithm, on the other hand, represents the water algorithm for solving a maze - imagine pouring water onto the starting position of a maze and let the water flow into the maze, logging its different positions along all the paths available simultaneously until one of the waterways reaches the final destination of the maze. The queue algorithm logs the different forks and paths in the maze and pursues all of them parallel to each other until one of them arrives upon its desired destination.

@@ -1,0 +1,11 @@
+1e. Test 3 fails - an iterator is being used to go through the vector, so when the vector is reallocated to be able to store more data in another location, the iterator address pointer becomes invalid.
+
+3. The operator< and operator== functions are not defined in the Coord class, so when the Map class template attempts to use those functions in order to sort them within the Map correctly, the function throws an error.
+
+4b. There needs to be a way to track the current path of that is being traversed that cannot be done with only one parameter function.
+
+5a. O(N^3) - The outer loop iterates N times, the middle loop iterates N*N times, the inner loop iterates N*N*(N-1) times which simplifies to a time complexity to O(N^3).
+5b. O(N^3) - The outer loop iterates N times, the middle loop iterates N*N/2 times on an average, the inner loop iterates N*N/2*(N-1) times which simplifies to a time complexity to O(N^3).
+
+6a. O(N^2) - The Map::get() traverses its list once (N). The loop then traverses another time calling get (N) and insert (N) once, causing the time complexity of the loop to be N(N+N). Then it calls Map::insert() which is again (N). This simplifies to O(N^2).
+6b. O(N) - This function traverses through the list once (N), causing the time complexity to be O(N).

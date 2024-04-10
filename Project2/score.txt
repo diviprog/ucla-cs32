@@ -1,0 +1,6 @@
+Your total score for Project 2 is 89/100.
+This breaks down as:
+        Correctness:            70/80
+        Program style:          5/5
+        Design documentation:   10/10
+        Test data:              4/5
